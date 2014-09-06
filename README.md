@@ -13,5 +13,5 @@ Whenever the container is run, it builds the latest [Kubernetes](https://github.
 So, to install or update [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes) i.e. within ```/opt/kubernetes``` just run
 
 ```
-docker run -v /opt/kubernetes:/target digitalwonderland/kubernetes
+docker run --rm -v /opt/kubernetes:/target digitalwonderland/kubernetes
 ```
