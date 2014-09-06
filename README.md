@@ -8,9 +8,9 @@ I need an easy way to install [Kubernetes](https://github.com/GoogleCloudPlatfor
 
 ## Usage:
 
-Whenever the container is run, it builds the latest [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes) binaries and moves them to the ```/target``` [volume](https://docs.docker.com/reference/builder/#volume) (any existing binaries will be removed).
+Whenever the container is run, it builds the latest [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes) binaries and moves them to the ```/target``` [volume](https://docs.docker.com/reference/builder/#volume) (any existing binaries will get overwritten).
 
-So, to install or update [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes) i.e. within ```/opt/kubernetes``` just run
+So, to install or update [Kubernetes](https://github.com/GoogleCloudPlatform/kubernetes), i.e. within ```/opt/kubernetes```, just run
 
 ```
 docker run --rm -v /opt/kubernetes:/target digitalwonderland/kubernetes
