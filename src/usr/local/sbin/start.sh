@@ -8,5 +8,5 @@ cd $GOPATH/src/github.com/GoogleCloudPlatform
 git clone https://github.com/GoogleCloudPlatform/kubernetes
 cd kubernetes
 make
-cp -f /opt/go/src/github.com/GoogleCloudPlatform/kubernetes/_output/go/bin/* /target
+cp -f /opt/go/src/github.com/GoogleCloudPlatform/kubernetes/_output/local/go/bin/* /target
 chmod +x /target/*
