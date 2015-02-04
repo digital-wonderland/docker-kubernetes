@@ -11,4 +11,5 @@ git clone --depth 1 https://github.com/GoogleCloudPlatform/kubernetes --branch $
 cd kubernetes
 make
 cp -f /opt/go/src/github.com/GoogleCloudPlatform/kubernetes/_output/local/go/bin/* /target
+echo "$(git log -n 1)" > /target/.revision
 chmod +x /target/*
