@@ -15,3 +15,5 @@ So, to install or update [Kubernetes](https://github.com/GoogleCloudPlatform/kub
 ```
 docker run --rm -v /opt/kubernetes:/target digitalwonderland/kubernetes
 ```
+
+To build a specific branch just pass its name as parameter. If none is passed the ```master``` branch gets build.
